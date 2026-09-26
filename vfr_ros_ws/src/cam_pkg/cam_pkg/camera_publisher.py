@@ -15,7 +15,7 @@ class CameraPublisherNode(Node):
         self.publisher_ = self.create_publisher(Image, "video_topic", 1)
         self.frameId = 0
 
-        self.videoCapture = cv2.VideoCapture('rtsp://192.0.2.3/stream/jpeg')
+        self.videoCapture = cv2.VideoCapture('rtsp://10.22.59.5/jpegsen2src1n2')
         self.bridge = CvBridge()
 
         # Modo 1 - timer + spin
